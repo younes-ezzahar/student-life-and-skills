@@ -9,68 +9,7 @@
 <meta name="description" content="Student Life and Skills à Agadir : accompagnement des enfants avec autisme, TDAH, troubles du langage, difficultés d’apprentissage, et jeux de développement cognitif.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--gold:#BC9434;--blue:#111111;--teal:#BC9434;--bg:#FFFFFF;--card:#fff;--ink:#161616;--mut:#575757;--line:#E4E0D3;--tint:#F5F1E4;--on:#fff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:calc(170px + env(safe-area-inset-top,0px))}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Nunito Sans",system-ui,sans-serif}
-h1,h2,h3{font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:600;line-height:1.15;margin:0 0 .5em;color:var(--blue)}
-h1{font-size:clamp(2rem,6vw,3.4rem)}h2{font-size:clamp(1.6rem,4vw,2.3rem)}h3{font-size:1.2rem;color:var(--ink)}
-p{margin:0 0 1em;max-width:62ch}a{color:var(--blue)}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-section{padding:64px 0}
-header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:1080px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--blue);font:600 1.05rem Fredoka,sans-serif}
-.chip{display:flex}
-.brand img{height:68px;width:auto;display:block}
-nav{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none}
-nav a{text-decoration:none;color:var(--ink);font-weight:700;font-size:.95rem;white-space:nowrap;padding:6px 0}
-nav a:hover{box-shadow:inset 0 -3px var(--gold)}
-.btn{display:inline-block;background:var(--blue);color:#fff;border:0;border-radius:999px;padding:13px 26px;font:700 1rem "Nunito Sans",sans-serif;text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--gold);color:#111}
-.btn.alt{background:transparent;color:var(--blue);border:2px solid var(--blue)}.btn.alt:hover{background:var(--gold);border-color:var(--gold)}
-.hero{padding:48px 0 72px}
-.hero .wrap{display:grid;gap:36px;align-items:center}
-.hero .art{justify-self:center;width:100%;max-width:400px}.art svg{width:100%;height:auto;display:block}.bgc{fill:var(--tint)}
-.hero{background:linear-gradient(180deg,var(--tint),var(--bg))}
-.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
-.lead{font-size:1.15rem;color:var(--mut)}
-.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;border-top:5px solid var(--c,var(--blue))}
-.card:nth-child(3n+1){--c:var(--blue)}.card:nth-child(3n+2){--c:var(--gold)}.card:nth-child(3n){--c:var(--teal)}
-.card p{color:var(--mut);margin:0;font-size:.97rem}
-.alt-bg{background:var(--tint)}
-.games{display:grid;gap:32px;align-items:start}
-.list{padding:0;list-style:none;margin:0 0 1.2em}
-.list li{padding:8px 0 8px 30px;position:relative}
-.list li::before{content:"";position:absolute;left:0;top:14px;width:16px;height:16px;border-radius:5px 2px 5px 2px;background:var(--gold)}
-.play{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:20px;max-width:420px}
-.play h3{margin:0 0 4px}
-.board{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
-.tile{aspect-ratio:1;border:0;border-radius:16px;background:var(--blue);color:transparent;font-size:2rem;cursor:pointer;display:grid;place-items:center;transition:transform .25s,background .25s}
-.tile.open,.tile.done{background:var(--tint);color:inherit;transform:rotateY(180deg)}
-.tile.open span,.tile.done span{transform:rotateY(180deg)}
-.tile.done{background:#EBD9A8}
-#msg{min-height:1.6em;font-weight:700;color:var(--ink);margin:0}
-.team{display:flex;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;flex-wrap:wrap}
-.avatar{width:92px;height:92px;border-radius:50%;background:var(--gold);color:#111;display:grid;place-items:center;font:600 2rem Fredoka,sans-serif;flex:none}
-.team p{margin:0;color:var(--mut)}
-details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin-bottom:10px}
-summary{cursor:pointer;font-weight:700}
-details p{margin:10px 0 0;color:var(--mut)}
-.contact{display:grid;gap:32px}
-form{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;display:grid;gap:14px}
-label{display:grid;gap:6px;font-weight:700;font-size:.93rem}
-input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px}
-textarea{min-height:110px;resize:vertical}
-.note{font-size:.88rem;color:var(--mut);margin:0}
-footer{background:var(--tint);color:var(--ink);border-top:5px solid var(--gold);padding-top:28px;font-size:.92rem}footer a{color:var(--ink)}footer p{margin:0 0 6px;max-width:none}.legal{background:#111;color:#fff;margin-top:24px;padding:14px 0 calc(14px + env(safe-area-inset-bottom,0px))}.legal p{margin:0}.legal .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px}
-@media (min-width:820px){.brand img{height:88px}.hero .wrap{grid-template-columns:1.3fr 1fr}.games,.contact{grid-template-columns:1fr 1fr}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -203,23 +142,6 @@ footer{background:var(--tint);color:var(--ink);border-top:5px solid var(--gold);
 <div class="legal"><div class="wrap"><p>© 2022–<span id="yr">2026</span> Student Life and Skills. Tous droits réservés.</p><p>Conçu et développé par Younes Ezzahar</p></div></div>
 </footer>
 
-<script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-var icons=['🧩','🐘','🌈','🚀'],board=document.getElementById('board'),msg=document.getElementById('msg'),first=null,lock=false,moves=0,found=0;
-function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
-function start(){board.innerHTML='';msg.textContent='';first=null;lock=false;moves=0;found=0;
-shuffle(icons.concat(icons)).forEach(function(ic){var b=document.createElement('button');b.type='button';b.className='tile';b.setAttribute('aria-label','Carte cachée');b.dataset.v=ic;b.innerHTML='<span>'+ic+'</span>';b.addEventListener('click',function(){flip(b)});board.appendChild(b)})}
-function flip(b){if(lock||b===first||b.classList.contains('done'))return;b.classList.add('open');
-if(!first){first=b;return}
-moves++;var a=first;first=null;
-if(a.dataset.v===b.dataset.v){a.className=b.className='tile done';found++;
-if(found===icons.length)msg.textContent='Bravo ! Terminé en '+moves+' essais.'}
-else{lock=true;setTimeout(function(){a.classList.remove('open');b.classList.remove('open');lock=false},800)}}
-document.getElementById('reset').addEventListener('click',start);start();
-document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var f=e.target,v=function(n){return f.elements[n].value};
-var body='Bonjour,\n\nJe souhaite prendre rendez-vous.\n\nNom : '+v('nom')+'\nE-mail : '+v('email')+'\nÂge de l’enfant : '+v('age')+'\nMotif : '+v('motif')+'\n\n'+v('message');
-window.location.href='mailto:studentlifeandskills1@gmail.com?subject='+encodeURIComponent('Demande de rendez-vous – '+v('motif'))+'&body='+encodeURIComponent(body);
-document.getElementById('fnote').textContent='Si rien ne s’ouvre, écrivez-nous directement à studentlifeandskills1@gmail.com.'});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
